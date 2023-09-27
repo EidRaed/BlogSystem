@@ -99,7 +99,8 @@ body {
 	background: transparent;
 	margin-left: 6px;
 	border-radius: 48px 0 0 48px;
-	padding: 4px;
+	padding: 5px;
+
 }
 #sidebar .side-menu li.active {
 	background: var(--grey);
@@ -400,7 +401,7 @@ body {
 	color: var(--dark);
 }
 #content main .box-info li .text p {
-	color: var(--dark);	
+	color: var(--dark);
 }
 
 

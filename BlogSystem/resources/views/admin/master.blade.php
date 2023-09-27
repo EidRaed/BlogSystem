@@ -18,51 +18,43 @@
 	<section id="sidebar">
 		<a href="#" class="brand">
 			<i class='bx bxs-smile'></i>
-			<span class="text">AdminHub</span>
+			<span class="text">BLOG SYSTEM</span>
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
 				<a href="#">
 					<i class='bx bxs-dashboard' ></i>
-					<span class="text">Dashboard</span>
+					<span class="text">DASHBOARD</span>
 				</a>
 			</li>
-			<li>
+
+
+
+            <li class="active">
 				<a href="#">
-					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">My Store</span>
+					<i class='bx bxs-users'></i>
+					<span class="text">USERS</span>
 				</a>
 			</li>
-			<li>
+
+            <li class="active">
 				<a href="#">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
+					<i class='bx bxs-categories'></i>
+					<span class="text">CATEGORIES</span>
 				</a>
 			</li>
-			<li>
+
+            <li class="active">
 				<a href="#">
-					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
+					<i class='bx bxs-blogPost' ></i>
+					<span class="text">POSTS</span>
 				</a>
 			</li>
-			<li>
+
+            <li class="active">
 				<a href="#">
-					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
-				</a>
-			</li>
-		</ul>
-		<ul class="side-menu">
-			<li>
-				<a href="#">
-					<i class='bx bxs-cog' ></i>
-					<span class="text">Settings</span>
-				</a>
-			</li>
-			<li>
-				<a href="#" class="logout">
-					<i class='bx bxs-log-out-circle' ></i>
-					<span class="text">Logout</span>
+					<i class='bx bxs-blogPost' ></i>
+					<span class="text">LOG OUT</span>
 				</a>
 			</li>
 		</ul>
@@ -76,7 +68,6 @@
 		<!-- NAVBAR -->
 		<nav>
 			<i class='bx bx-menu' ></i>
-			<a href="#" class="nav-link">Categories</a>
 			<form action="#">
 				<div class="form-input">
 					<input type="search" placeholder="Search...">
