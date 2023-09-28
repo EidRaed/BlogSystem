@@ -15,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/master', function () {
-    return view('admin.master');
+    return view('layout.master');
 });
-Route::get('/page1', function () {
-    return view('blogPages.one');
-});
+
