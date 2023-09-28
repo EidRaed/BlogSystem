@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title','post - index')
+@section('title','category - edit')
 @section('content')
 
 @endsection
