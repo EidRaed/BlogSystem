@@ -18,3 +18,7 @@ Route::get('/master', function () {
     return view('layout.master');
 });
 
+Route::get('/createcategoty', function () {
+    return view('admin.category.create');
+});
+
