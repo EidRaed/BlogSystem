@@ -13,6 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::get('/master', function () {
+    return view('layout.master');
+});
+Route::get('/createCategory', function () {
+    return view('admin.category.createCategory');
+});
+
+Route::get('/showCategory', function () {
+    return view('admin.category.showCategory');
+});
+
+Route::get('/editCategory', function () {
+    return view('admin.category.editCategory');
+});
+
+Route::get('/createPost', function () {
+    return view('admin.post.createPost');
+});
+
+Route::get('/showPost', function () {
+    return view('admin.post.showPost');
+});
+
+Route::get('/editPost', function () {
+    return view('admin.post.editPost');
 });
