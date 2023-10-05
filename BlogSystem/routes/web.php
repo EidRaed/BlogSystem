@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,31 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-Route::get('/master', function () {
-    return view('layout.master');
-});
-Route::get('/createCategory', function () {
-    return view('admin.category.createCategory');
+Route::get('/', function () {
+    return view('welcome');
 });
 
-Route::get('/showCategory', function () {
-    return view('admin.category.showCategory');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/editCategory', function () {
-    return view('admin.category.editCategory');
-});
-
-Route::get('/createPost', function () {
-    return view('admin.post.createPost');
-});
-
-Route::get('/showPost', function () {
-    return view('admin.post.showPost');
-});
-
-Route::get('/editPost', function () {
-    return view('admin.post.editPost');
-});
+require __DIR__.'/auth.php';
